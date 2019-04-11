@@ -12,7 +12,7 @@ RUN wget https://github.com/a8m/envsubst/releases/download/v${ENVSUBST_VERSION}/
 	&& mv envsubst-Linux-x86_64 /usr/local/bin/envsubst \
 	&& chmod +x /usr/local/bin/envsubst
 
-VOLUME /config
+#VOLUME /config
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
